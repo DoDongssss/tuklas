@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-full items-start justify-center w-full px-[10rem] py-[5rem] gap-8">
+    <!-- <div class="flex flex-col h-full items-start justify-center w-full px-[10rem] py-[5rem] gap-8">
         <div class="w-full text-center">
             <h2 class="font-[900] text-4xl">THE TUKLAS TEAM</h2>
         </div>
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script>

@@ -1,44 +1,54 @@
 <template>
-    <div class="flex flex-col h-full items-start justify-center w-full bg-[#353448]">
-        <div class="flex items-center justify-between py-[4rem] px-[10rem]">
-            <div class="flex flex-col justify-center text-white w-1/2">
-                <h1 class="font-[900] text-[4.5rem] tracking-widest"> TUKLAS </h1>
-                <p class="text-lgtext-justify">Aims to discover innovation by simplifying processes and systems that ensures sustainable success to our business partners. We envision to be the catalyst of development by embracing and empowering change.</p>
-            </div>
-            <div class="flex flex-col justify-center items-center gap-3 w-1/2 text-white">
-                <h5 class="font-bold text-xl">QUICK LINKS</h5>
-                <div class="flex gap-2">
-                    <div class="p-2 rounded-md bg-white"></div>
-                    <div class="p-2 rounded-md bg-white"></div>
-                    <div class="p-2 rounded-md bg-white"></div>
-                </div>
-            </div>
-        </div>
-        <div class="flex items-center justify-between w-full px-[10rem] bg-[#2B293E]">
-            <div>
-                <img src="/images/logo.png" alt="" class="w-[100px]">
-            </div>
-            <div class="flex gap-11">
-                <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all">Home</li>
-                <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all">Services</li>
-                <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all">About</li>
-                <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all">Product</li>
-                <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all">Contact us</li>
-            </div>
-        </div>
+  <div class="flex flex-col h-full items-start justify-center w-full bg-[#353448]">
+    <div class="flex items-center justify-between w-full px-[10rem] bg-[#000000] py-[5rem]">
+      <div class="flex flex-col text-white" style="width: 75%; padding-right: 10rem;">
+        <h5 class="font-[900] text-[4.5rem] tracking-widest self-start">TUKLAS</h5>
+        <p class="text-lg text-justify">Aims to discover innovation by simplifying processes and systems that ensure sustainable success for our business partners. We envision being the catalyst for development by embracing and empowering change.</p>
+      </div>
+      <div class="flex flex-col text-white text-lg" style="width: 50%;">
+        <h5 class="font-bold mb-5">Products and Services</h5>
+        <ul class="list-disc">
+          <li class="text-sm">Inventory and POS</li>
+          <li class="text-sm">Website Development</li>
+          <li class="text-sm">Social Media Management</li>
+          <li class="text-sm">Events Management</li>
+          <li class="text-sm">Internet-Of-Things</li>
+        </ul>
+      </div>
+      <div class="flex flex-col text-white text-lg" style="width: 15%;">
+        <h5 class="font-bold mb-2 text-lg self-start">Contact</h5>
+        <p>
+          09105344829
+        </p>
+        <p>
+          tuklas.it@gmail.com
+        </p>
+      </div>
     </div>
+    <div class="flex items-center justify-between w-full px-[10rem] bg-[#2B293E]">
+      <div>
+      <a href="/"> 
+        <img src="/images/logo.png" alt="" class="w-[100px]">
+      </a>
+    </div>
+      <div class="flex gap-11">
+        <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/">Home</a></li>
+        <!-- <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/services">Services</a></li> -->
+        <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Product</a></li>
+        <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/about">About</a></li>
+        <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/contact">Contact us</a></li>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    setup () {
-        
-
-        return {}
-    }
-}
+  setup() {
+    return {};
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
+<style  scoped>
 </style>
