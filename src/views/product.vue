@@ -80,7 +80,7 @@
           </div>
           <div className="collapse-content"> 
             <ul class="list-disc">
-                <li>Educational Paper Consultation  </li>
+                <li>Educational Paper Consultation</li>
                   <li>Capstone Paper and System Consultation</li>
                   <li>Thesis Consultation</li>
                   <li>Feasibility Study Consultation</li>

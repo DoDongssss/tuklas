@@ -11,83 +11,137 @@
             Our professional team is ready and willing to help evaluate your needs and find the best solution to your business process and IT needs
           </p>
           <input type="text" placeholder="Name" class="input-field" />
-          <input type="text" placeholder="Company" class="input-field" />
-          <input type="text" placeholder="Email Address" class="input-field" />
-          <input type="text" placeholder="Message Subject" class="input-field" />
+          <input type="text" placeholder="Company Name" class="input-field" />
+          <div class="input-group">
+            <input type="text" placeholder="Email Address" class="input-field email-field" />
+            <input type="text" placeholder="Mobile Number" class="input-field mobile-field" oninput="this.value = this.value.replace(/[^0-9\+]/g, '')" />
+          </div>
+
+          <select class="input-field">
+            <option value="" disabled selected>Select Product to Avail</option>
+            <optgroup label="Business Development">
+              <option value="Inventory System">Inventory System</option>
+              <option value="Point-Of-Sale System">Point-Of-Sale System</option>
+              <option value="Telemedicine System">Telemedicine System</option>
+              <option value="Appointment System">Appointment System</option>
+              <option value="Booking System">Booking System</option>
+              <option value="Document Management System">Document Management System</option>
+              <option value="Enrollment System">Enrollment System</option>
+              <option value="Landing Page">Landing Page</option>
+            </optgroup>
+            <optgroup label="Technical Support Editing Services">
+              <option value="Events Management">Events Management</option>
+              <option value="Tabulation System">Tabulation System</option>
+              <option value="Company Logo Editing">Company Logo Editing</option>
+              <option value="Video Editing">Video Editing</option>
+              <option value="Photo Editing">Photo Editing</option>
+            </optgroup>
+            <optgroup label="Home Automation Systems using IOT">
+              <option value="Smart Home System">Smart Home System</option>
+              <option value="Fire Alarm with UI">Fire Alarm with UI</option>
+              <option value="Burglar Alarm System with UI">Burglar Alarm System with UI</option>
+              <option value="Automated Appliances with UI">Automated Appliances with UI</option>
+              <option value="Wifi Controlled Breaker Unit">Wifi Controlled Breaker Unit</option>
+            </optgroup>
+            <optgroup label="Educational Consultation">
+              <option value="Educational Paper Consultation">Educational Paper Consultation</option>
+              <option value="Capstone Paper and System Consultation">Capstone Paper and System Consultation</option>
+              <option value="Thesis Consultation">Thesis Consultation</option>
+              <option value="Feasibility Study Consultation">Feasibility Study Consultation</option>
+            </optgroup>
+          </select>
           <textarea placeholder="Message" class="input-field"></textarea>
           <button class="submit-button">Send</button>
           <div class="arrow-animation"></div>
         </div>
       </div>
     </div>
-    </section>
-    <div>
+  </section>
+  <div>
     <HeaderView/>
   </div>
-  </template>
-  
-  <script>
-  import HeaderView from '@/components/Header.vue';
-  export default {
-    components:{
-      HeaderView
-    },
-    setup() {
-      return {};
-    },
-  };
-  
-  </script>
-  
-  <style scoped>
-  .container {
-    display: flex;
-    height: 100vh;
+</template>
+
+<script>
+import HeaderView from '@/components/Header.vue';
+export default {
+  components:{
+    HeaderView
+  },
+  setup() {
+    return {};
+  },
+};
+
+  function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode;
+    if (charCode != 43 && charCode > 31 && (charCode < 48 || charCode > 57))
+      return false;
+    return true;
   }
-  
-  .left-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .right-side {
-    position: relative;
-    background: radial-gradient(circle, #2f3764, #181f4b);
-    color: white;
-    padding: 20px;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .chat-box {
-    position: relative;
-    max-width: 500px;
-  }
-  
-  .input-field {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    border: none;
-  }
-  
-  .submit-button {
-    background-color: #c61407;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    animation: lightShow 0.5s infinite alternate;
-  }
-  
-  @keyframes lightShow {
+</script>
+
+<style scoped>
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-side {
+  position: relative;
+  background: radial-gradient(circle, #2f3764, #181f4b);
+  color: white;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-box {
+  position: relative;
+  max-width: 500px;
+}
+
+.input-field {
+  width: calc(100%);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-field {
+  width: calc(50% - 5px);
+}
+
+.mobile-field {
+  width: calc(50% - 5px); 
+}
+
+.submit-button {
+  background-color: #c61407;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  animation: lightShow 0.5s infinite alternate;
+}
+@keyframes lightShow {
     0% {
       box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     }
