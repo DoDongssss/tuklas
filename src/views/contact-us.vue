@@ -1,5 +1,8 @@
 <template>
   <section>
+    <div>
+      <HeaderView/>
+    </div>
     <div class="container">
       <div class="left-side">
         <img src="/images/Contact.jpg" alt="TUKLAS" class="left-image" />
@@ -57,9 +60,6 @@
       </div>
     </div>
   </section>
-  <div>
-    <HeaderView/>
-  </div>
 </template>
 
 <script>

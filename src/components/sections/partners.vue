@@ -1,7 +1,7 @@
 <template>
     <section class="w-full">
-    <div class="container mx-auto bg-black py-[2rem]">
-        <h1 class="font-semibold text-center text-5xl text-white">OUR PARTNERS</h1>
+    <div class="container bg-black py-[2rem] max-w-full">
+        <h1 class="font-semibold text-center text-[9vw] sm:text-5xl text-white">OUR PARTNERS</h1>
         <div class="slider">
             <div class="slide-track2">
                 <div class="slide"><img src="/images/NEXUS.png" alt=""></div>

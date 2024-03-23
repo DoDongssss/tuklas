@@ -1,14 +1,20 @@
 <template>
-    <section class="flex flex-col h-screen justify-center items-center">
+    <section class="flex flex-col h-[300px] sm:h-screen justify-center items-center">
       <div class="block__content" style="background-image: url('/images/catch.jpg');">
-        <div class="text-container">
-          <h2 class="block__title">
-            WE WANT TO </h2>
+        <div class="hidden sm:block text-container">
+          <h2 class="block__title"> WE WANT TO </h2>
             <h2 class="block__title"><span class="yellow"> SEE YOU SUCCEED</span>
           </h2>
         </div>
-        <div class="button-container">
+        <div class=" sm:hidden flex flex-col items-center justify-center">
+          <h2 class="text-[9vw] font-bold text-white">WE WANT TO</h2>
+          <h2 class="text-[9vw] font-bold text-yellow-500">SEE YOU SUCCEED</h2>
+        </div>
+        <div class="hidden sm:block button-container">
           <button class="pulsating-button" @click="redirectToContact">Connect with us</button>
+        </div>
+        <div class="sm:hidden button-container">
+          <button class="pulsating-button " @click="redirectToContact">Connect with us</button>
         </div>
       </div>
     </section>
