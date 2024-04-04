@@ -1,15 +1,15 @@
 <template>
-  <div class="hidden md:flex items-center justify-between h-[70px] w-full bg-black/40 px-[10rem] z-10 absolute top-0">
+  <div class="hidden md:flex items-center justify-between h-[70px] w-full bg-black/40 md:px-[4rem] px-[10rem] z-10 absolute top-0">
     <div>
       <a href="/">
-        <img src="/images/logo.png" alt="" class="w-[125px] image-shadow">
+        <img src="/images/logo.png" alt="" class="md:w-[100px] w-[125px] image-shadow">
       </a>
     </div>
-    <div class="flex gap-11">
-      <li class="list-none text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/">Home</a></li>
-      <li class="list-none text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Product</a></li>
-      <li class="list-none text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/about">About</a></li>
-      <li class="list-none text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/contact">Contact us</a></li>
+    <div class="flex md:gap-8 gap-11">
+      <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/">Home</a></li>
+      <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Product</a></li>
+      <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/about">About</a></li>
+      <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/contact">Contact us</a></li>
       <button class="submit-button">Join us</button>
     </div>
     <div></div>
