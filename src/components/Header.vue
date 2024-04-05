@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden md:flex items-center justify-between h-[70px] w-full bg-black/40 md:px-[4rem] px-[10rem] z-10 absolute top-0">
+  <div class="hidden md:flex items-center justify-between h-[70px] w-full bg-gradient-to-b from-black to-transparent md:px-[4rem] px-[10rem] z-10 absolute top-0">
     <div>
       <a href="/">
         <img src="/images/logo.png" alt="" class="md:w-[100px] w-[125px] image-shadow">
@@ -7,10 +7,10 @@
     </div>
     <div class="flex md:gap-8 gap-11">
       <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/">Home</a></li>
-      <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Product</a></li>
+      <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Services</a></li>
       <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/about">About</a></li>
       <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/contact">Contact us</a></li>
-      <button class="submit-button">Join us</button>
+      <button class="submit-button"@click="showAlert" >Join us</button>
     </div>
     <div></div>
   </div>
@@ -27,7 +27,7 @@
 
     <div class="absolute left-0 right-0 flex flex-col gap-2 w-full p-4 bg-black/90 z-10 overflow-hidden transition-all" :class="show_menu ? 'top-[55px]' : 'top-[-400px] z-0' ">
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/">Home</a></li>
-      <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/product">Product</a></li>
+      <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/product">Services</a></li>
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/about">About</a></li>
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/contact">Contact us</a></li>
     </div>
@@ -36,25 +36,28 @@
 
 <script>
 import { ref } from 'vue';
-
 export default {
-  setup () {
-    const show_menu = ref(false)
+  setup() {
+    const show_menu = ref(false);
+
+    const toggleMenu = () => {
+      show_menu.value = !show_menu.value;
+      console.log(show_menu.value);
+    };
+
+    const showAlert = () => {
+      alert("Sorry we are under maintenance, for further inquiries you can message us on our Facebook: page Tuklas IT Creatives and Solution or you may call us at 09105344829");
+    };
 
     return {
-      show_menu
-    }
-  },
-
-  methods: {
-    toggleMenu(){
-      this.show_menu = !this.show_menu
-
-      console.log(this.show_menu)
-    }
+      show_menu,
+      toggleMenu,
+      showAlert
+    };
   }
 }
 </script>
+
 
 <style scoped>
   .submit-button {
@@ -68,7 +71,7 @@ export default {
   }
 
   .image-shadow{
-    filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 10px rgb(170, 170, 170));
   }
   
   @keyframes lightShow {

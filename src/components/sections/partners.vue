@@ -9,12 +9,11 @@
                 <div class="slide"><img src="/images/PGS.png" alt=""></div>
                 <div class="slide"><img src="/images/DOST.png" alt=""></div>
                 <div class="slide"><img src="/images/DTI.png" alt=""></div>
-                
-                <div class="slide"><img src="/images/NEXUS.png" alt=""></div>
-                <div class="slide"><img src="/images/DICT.png" alt=""></div>
-                <div class="slide"><img src="/images/PGS.png" alt=""></div>
-                <div class="slide"><img src="/images/DOST.png" alt=""></div>
-                <div class="slide"><img src="/images/DTI.png" alt=""></div>
+                <div class="slide"><img src="/images/DepEd1.png" alt=""></div>
+                <div class="slide"><img src="/images/SDG1.png" alt=""></div>
+                <div class="slide"><img src="/images/NYC1.png" alt=""></div>
+                <div class="slide"><img src="/images/YF1.png" alt=""></div>
+
             </div>
         </div>
     </div>
@@ -32,7 +31,7 @@ export default {
 
 <style scoped>
 .slider {
-    height: 150px;
+    height: 200px;
     position: relative;
     width: 100%;
     background-color: black;
@@ -71,7 +70,7 @@ export default {
 }
 
 .slide {
-    padding: 50px; 
+    padding: 30px; 
 }
 
 .slide img {
