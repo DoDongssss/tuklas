@@ -3,9 +3,9 @@
     <div>
       <HeaderView />
     </div>
-    <div class="flex justify-between items-center w-full bg-blue-900 px-5 py-3 md:px-10">
+    <div class="flex justify-between items-center w-full bg-red-500 px-5 py-3 md:px-10">
       <div class="flex items-center">
-        <p class="text-white text-4xl md:text-6xl">Services</p>
+        <p class="text-white text-4xl md:text-8xl">Services</p>
       </div>
       <div>
         <img src="/images/services.png" alt="Services Image" class="w-full md:w-[400px]">

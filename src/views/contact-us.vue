@@ -53,6 +53,9 @@
               <option value="Thesis Consultation">Thesis Consultation</option>
               <option value="Feasibility Study Consultation">Feasibility Study Consultation</option>
             </optgroup>
+            <optgroup label="Other">
+              <option value="Other">Other</option>
+            </optgroup>
           </select>
           <textarea placeholder="Message" class="input-field"></textarea>
           <button class="submit-button" @click="showAlert">Send</button>
@@ -94,7 +97,7 @@ export default {
 
 .right-side {
   position: relative;
-  background: radial-gradient(circle, #041ba1, #181f4b);
+  background: radial-gradient(circle, #bf5c5c, #520601);
   color: white;
   padding: 20px;
   flex-grow: 1;
@@ -112,7 +115,7 @@ export default {
   width: calc(100%);
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: white;
   color: black;
   border: none;
@@ -162,7 +165,7 @@ export default {
   top: 11%;
   width: 20px;
   height: 20px;
-  background-color: #c61407;
+  background-color: #747474;
   clip-path: polygon(0 50%, 100% 0, 100% 100%);
   animation: arrowMove 2s infinite;
 }

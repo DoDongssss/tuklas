@@ -12,28 +12,28 @@
                 <div class="flex flex-col items-center text-center p-4">
                     <ProductInventory class="w-[50vw] h-[50vw] sm:w-[13rem] sm:h-[13rem]"/>
                     <h3 class="font-bold text-[4vw] sm:text-lg">INVENTORY AND POINT-OF-SALE SYSTEM</h3>
-                    <p class="text-[4vw] sm:text-[1rem] text-justify sm:text-normal">A comprehensive Inventory Point-of-Sale system that smoothly manages stock levels, sales transactions, and customer interactions for efficient retail operations.</p>
+                    <p class="text-[4vw] sm:text-[1rem] text-center sm:text-normal">A comprehensive Inventory Point-of-Sale system that smoothly manages stock levels, sales transactions, and customer interactions for efficient retail operations.</p>
                 </div>
             </div>
             <div class="product-card min-w-[40%] lg:min-w-min"  @click="redirectToProduct">
                 <div class="flex flex-col items-center text-center p-4 ">
                     <ProductWebsite class="w-[50vw] h-[50vw] sm:w-[13rem] sm:h-[13rem]"/>
                     <h3 class="font-bold text-[4vw] sm:text-lg">WEBSITE DEVELOPMENT</h3>
-                    <p class="text-[4vw] sm:text-[1rem] text-justify sm:text-normal">Tailored Website Development services creating visually appealing and functionally robust online platforms that effectively represent and elevate businesses.</p>
+                    <p class="text-[4vw] sm:text-[1rem] text-center sm:text-normal">Tailored Website Development services creating visually appealing and functionally robust online platforms that effectively represent and elevate businesses.</p>
                 </div>
             </div>
             <div class="product-card min-w-[40%] lg:min-w-min"  @click="redirectToProduct">
                 <div class="flex flex-col items-center text-center p-4">
                     <ProductSocmed class="w-[50vw] h-[50vw] sm:w-[13rem] sm:h-[13rem]"/>
                     <h3 class="font-bold text-[4vw] sm:text-lg">SOCIAL MEDIA MANAGEMENT</h3>
-                    <p class="text-[4vw]  sm:text-[1rem] text-justify sm:text-normal">Strategic Social Media Management, crafting engaging and impactful online presence to enhance brand visibility, customer engagement, and overall digital influence.</p>
+                    <p class="text-[4vw]  sm:text-[1rem] text-center sm:text-normal">Strategic Social Media Management, crafting engaging and impactful online presence to enhance brand visibility, customer engagement, and overall digital influence.</p>
                 </div>
             </div>
             <div class="product-card min-w-[40%] lg:min-w-min"  @click="redirectToProduct">
                   <div class="flex flex-col items-center text-center p-4">
                     <ProductEvents class="w-[50vw] h-[50vw] sm:w-[13rem] sm:h-[13rem]"/>
                     <h3 class="font-bold text-[4vw] sm:text-lg">EVENTS TECHNICAL SUPPORT</h3>
-                    <p class="text-[4vw]  sm:text-[1rem] text-justify sm:text-normal">Events Technical Support offering seamless audio-visual solutions and technical assistance to ensure the success of events, conferences, and gatherings.</p>
+                    <p class="text-[4vw]  sm:text-[1rem] text-center sm:text-normal">Events Technical Support offering seamless audio-visual solutions and technical assistance to ensure the success of events, conferences, and gatherings.</p>
                 </div>
             </div>
         </div>
