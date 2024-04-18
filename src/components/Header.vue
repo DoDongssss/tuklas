@@ -46,7 +46,7 @@ export default {
     };
 
     const showAlert = () => {
-      alert("Sorry we are under maintenance, for further inquiries you can message us on our Facebook: page Tuklas IT Creatives and Solution or you may call us at 09105344829");
+      alert("Sorry we are under maintenance, for further inquiries you can message us on our Facebook: page Tuklas IT Creatives and Solution or you may call us at +639638385017");
     };
 
     return {
@@ -71,7 +71,7 @@ export default {
   }
 
   .image-shadow{
-    filter: drop-shadow(0 0 10px rgb(170, 170, 170));
+    filter: drop-shadow(0 0 5px rgb(170, 170, 170));
   }
   
   @keyframes lightShow {
