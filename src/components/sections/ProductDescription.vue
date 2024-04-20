@@ -1,5 +1,5 @@
 <template>
-    <section class="justify-center w-full py-[5rem] px-5 sm:px-[1rem]">
+    <section class="justify-center w-full py-[10rem] px-5 sm:px-[1rem]">
       <div class="justify-center w-full gap-5">
         <h1 class=" text-[7vw] sm:text-4xl md:text-5xl text-6xl font-bold text-center">
           Core Products We Make
@@ -12,7 +12,7 @@
                 <div class="flex flex-col items-center text-center p-4">
                     <ProductInventory class="w-[50vw] h-[50vw] sm:w-[13rem] sm:h-[13rem]"/>
                     <h3 class="font-bold text-[4vw] sm:text-lg">INVENTORY AND POINT-OF-SALE SYSTEM</h3>
-                    <p class="text-[4vw] sm:text-[1rem] text-center sm:text-normal">A comprehensive Inventory Point-of-Sale system that smoothly manages stock levels, sales transactions, and customer interactions for efficient retail operations.</p>
+                    <p class="text-[4vw] sm:text-[1rem] text-center sm:text-normal">A comprehensive Inventory Point-of-Sale system that smoothly manages stock levels and sales transactions for efficient retail operations.</p>
                 </div>
             </div>
             <div class="product-card min-w-[40%] lg:min-w-min"  @click="redirectToProduct">

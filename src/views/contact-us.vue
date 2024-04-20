@@ -27,7 +27,6 @@
               <option value="Inventory System">Inventory System</option>
               <option value="Point-Of-Sale System">Point-Of-Sale System</option>
               <option value="Telemedicine System">Telemedicine System</option>
-              <option value="Appointment System">Appointment System</option>
               <option value="Booking System">Booking System</option>
               <option value="Document Management System">Document Management System</option>
               <option value="Enrollment System">Enrollment System</option>
@@ -36,7 +35,6 @@
             <optgroup label="Technical Support Editing Services">
               <option value="Events Management">Events Management</option>
               <option value="Tabulation System">Tabulation System</option>
-              <option value="Company Logo Editing">Company Logo Editing</option>
               <option value="Video Editing">Video Editing</option>
               <option value="Photo Editing">Photo Editing</option>
             </optgroup>
@@ -45,7 +43,6 @@
               <option value="Fire Alarm with UI">Fire Alarm with UI</option>
               <option value="Burglar Alarm System with UI">Burglar Alarm System with UI</option>
               <option value="Automated Appliances with UI">Automated Appliances with UI</option>
-              <option value="Wifi Controlled Breaker Unit">Wifi Controlled Breaker Unit</option>
             </optgroup>
             <optgroup label="Educational Consultation">
               <option value="Educational Paper Consultation">Educational Paper Consultation</option>

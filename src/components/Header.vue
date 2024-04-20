@@ -30,6 +30,7 @@
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/product">Services</a></li>
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/about">About</a></li>
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/contact">Contact us</a></li>
+      <button class="submit-button"@click="showAlert" >Join us</button>
     </div>
   </div>
 </template>

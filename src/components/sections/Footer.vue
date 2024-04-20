@@ -50,7 +50,7 @@
       <div class="hidden sm:flex gap-11">
         <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/">Home</a></li>
         <!-- <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/services">Services</a></li> -->
-        <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Product</a></li>
+        <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Services</a></li>
         <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/about">About</a></li>
         <li class="list-none text-md cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/contact">Contact us</a></li>
       </div>
