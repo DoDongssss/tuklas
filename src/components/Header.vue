@@ -2,7 +2,7 @@
   <div class="hidden md:flex items-center justify-between h-[70px] w-full bg-gradient-to-b from-black to-transparent md:px-[4rem] px-[10rem] z-10 absolute top-0">
     <div>
       <a href="/">
-        <img src="/images/logo.png" alt="" class="md:w-[100px] w-[125px] image-shadow">
+        <img src="/images/bulb.png" alt="" class="md:w-[30px] w-[125px] image-shadow">
       </a>
     </div>
     <div class="flex md:gap-8 gap-11">
@@ -10,7 +10,7 @@
       <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/product">Services</a></li>
       <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/about">About</a></li>
       <li class="list-none md:text-sm text-lg cursor-pointer text-white hover:text-[#dc1102] transition-all"><a href="/contact">Contact us</a></li>
-      <button class="submit-button"@click="showAlert" >Join us</button>
+      <!-- <button class="submit-button"@click="showAlert" >Join us</button> -->
     </div>
     <div></div>
   </div>
@@ -30,7 +30,7 @@
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/product">Services</a></li>
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/about">About</a></li>
       <li class="list-none text-lg cursor-point text-white text-center p-2"><a href="/contact">Contact us</a></li>
-      <button class="submit-button"@click="showAlert" >Join us</button>
+      <!-- <button class="submit-button"@click="showAlert" >Join us</button> -->
     </div>
   </div>
 </template>

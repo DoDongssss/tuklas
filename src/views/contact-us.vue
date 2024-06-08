@@ -40,16 +40,16 @@
             </optgroup>
             <optgroup label="Home Automation Systems using IOT">
               <option value="Smart Home System">Smart Home System</option>
-              <option value="Fire Alarm with UI">Fire Alarm with UI</option>
-              <option value="Burglar Alarm System with UI">Burglar Alarm System with UI</option>
-              <option value="Automated Appliances with UI">Automated Appliances with UI</option>
+              <option value="Fire Alarm with UI">Fire Alarm System</option>
+              <option value="Burglar Alarm System with UI">Burglar Alarm System</option>
+              <option value="Automated Appliances with UI">Automated Appliances</option>
             </optgroup>
-            <optgroup label="Educational Consultation">
+            <!-- <optgroup label="Educational Consultation">
               <option value="Educational Paper Consultation">Educational Paper Consultation</option>
               <option value="Capstone Paper and System Consultation">Capstone Paper and System Consultation</option>
               <option value="Thesis Consultation">Thesis Consultation</option>
               <option value="Feasibility Study Consultation">Feasibility Study Consultation</option>
-            </optgroup>
+            </optgroup> -->
             <optgroup label="Other">
               <option value="Other">Other</option>
             </optgroup>

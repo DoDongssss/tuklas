@@ -68,7 +68,7 @@ export default {
 .product-card {
   flex: 1;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }

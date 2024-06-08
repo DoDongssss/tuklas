@@ -39,7 +39,7 @@
             <li>Appointment System</li>
             <li>Landing Page</li>
           </ul>
-          <a v-if="services[0].open" href="/inventory" class="block text-center mt-4 underline text-blue-500">Learn More</a>
+          <a v-if="services[0].open" href="/inventory" class="block text-center mt-4 underline text-red-600">Learn More</a>
         </div>
       </div>
 
@@ -60,7 +60,7 @@
             <li>Video Editing</li>
             <li>Photo Editing</li>
           </ul>
-          <a v-if="services[1].open" href="events_management" class="block text-center mt-4 underline text-blue-500">Learn More</a>
+          <a v-if="services[1].open" href="events_management" class="block text-center mt-4 underline text-red-500">Learn More</a>
         </div>
       </div>
 
@@ -81,11 +81,11 @@
             <li>Burglar Alarm System</li>
             <li>Automated Appliances</li>
           </ul>
-          <a v-if="services[2].open" href="smart_home_system" class="block text-center mt-4 underline text-blue-500">Learn More</a>
+          <a v-if="services[2].open" href="smart_home_system" class="block text-center mt-4 underline text-red-600">Learn More</a>
         </div>
       </div>
 
-      <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
+      <!-- <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
         <div class="bg-gray-200 rounded-lg p-4" @click="toggleService(3)" :class="{ 'cursor-pointer': !services[3].open, 'animate__animated animate__fadeIn': services[3].open }">
           <div class="flex justify-between items-center">
             <div class="text-xl font-medium">Educational Consultation</div>
@@ -102,9 +102,9 @@
             <li>Thesis Consultation</li>
             <li>Feasibility Study Consultation</li>
           </ul>
-          <a v-if="services[3].open" href="educational_paper_consultation" class="block text-center mt-4 underline text-blue-500">Learn More</a>
+          <a v-if="services[3].open" href="educational_paper_consultation" class="block text-center mt-4 underline text-red-600">Learn More</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -148,4 +148,5 @@ export default {
   animation-name: fadeIn;
   animation-duration: 0.5s;
 }
+
 </style>

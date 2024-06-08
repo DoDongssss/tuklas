@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen bg-[#f7efed]">
+  <div class="relative min-h-screen bg-[#ffffff]">
       <HeaderComponent/>
       <HomeComponent/>
       <TaglineComponent/>

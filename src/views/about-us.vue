@@ -3,9 +3,17 @@
     <div>
         <HeaderView/>
     </div>
+    <div class="flex justify-between items-center w-full bg-no-repeat bg-cover px-5 py-20 md:px-10" style="background-image: url('/images/about2.jpg')">
+      <div class="py-10">
+          <p class="text-white text-lg sm:text-xl md:text-6xl lg:text-8xl">ABOUT US</p>
+      </div>
+    </div>
+        <div class="w-full flex items-center text-center justify-center mt-5  md:mt-10">
+            <h2 class="text-[6vw] md:text-6xl border-b-4 w-fit italic font-light">Where we started </h2>
+        </div>
         <div class="flex items-center justify-center w-full">
-            <div class="flex items-center justify-center mt-5  md:mt-10 w-full px-8 md:px-[10rem] py-5 sm:py-[5rem]">
-                <p class="text-[#34363C] text-xl font-light italic text-justify sm:text-center">
+            <div class="flex items-center justify-center w-full px-8 md:px-[10rem] py-5 sm:py-[2rem]">
+                <p class="text-[#34363C] text-xl font-light italic text-center sm:text-center">
                     Unveiling Tuklas IT Creatives & Solutions : A Journey of Innovation and Collaboration
                     <br><br>
                     Welcome to Tuklas IT Creatives & Solutions, where innovation meets collaboration to shape the future of technology. Our journey began with a spark of an idea in September 2023, igniting a vision to create a company that would revolutionize the IT landscape. Through determination, passion, and a belief in the power of collaboration, Tuklas IT was born.
@@ -63,7 +71,7 @@
         </div>
     </section>
     <section class="flex flex-col h-full justify-center w-full py-[5rem] px-4">
-        <div className="mockup-window border bg-base-300 w-full lg:w-[70%] mx-auto mt-10">
+        <div className="mockup-window border bg-base-300 w-full lg:w-[60%] mx-auto mt-10">
             <div className="flex justify-center bg-base-200">
                 <div class="flex flex-col h-full items-start justify-center w-full">
                 <div class="w-full flex items-center text-center justify-center">
