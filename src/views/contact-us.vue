@@ -14,17 +14,17 @@
           <p class="chat-paragraph mb-5">
             Our professional team is ready and willing to help evaluate your needs and find the best solution to your business process and IT needs
           </p>
-          <input type="text" placeholder="Name" class="input-field" />
-          <input type="text" placeholder="Company Name" class="input-field" />
+          <input v-model="senderData.name" type="text" placeholder="Name" class="input-field" />
+          <input v-model="company_name" type="text" placeholder="Company Name" class="input-field" />
           <div class="input-group">
-            <input type="text" placeholder="Email Address" class="input-field email-field" />
-            <input type="text" placeholder="Mobile Number" class="input-field mobile-field" oninput="this.value = this.value.replace(/[^0-9\+]/g, '')" />
+            <input v-model="senderData.email" type="text" placeholder="Email Address" class="input-field email-field" />
+            <input v-model="mobile_number" type="text" placeholder="Mobile Number" class="input-field mobile-field" oninput="this.value = this.value.replace(/[^0-9\+]/g, '')" />
           </div>
 
-          <select class="input-field">
+          <select v-model="product" class="input-field">
             <option value="" disabled selected>Select Product to Avail</option>
             <optgroup label="Business Development">
-              <option value="Inventory System">Inventory System</option>
+              <option selected value="Inventory System">Inventory System</option>
               <option value="Point-Of-Sale System">Point-Of-Sale System</option>
               <option value="Telemedicine System">Telemedicine System</option>
               <option value="Booking System">Booking System</option>
@@ -54,8 +54,8 @@
               <option value="Other">Other</option>
             </optgroup>
           </select>
-          <textarea placeholder="Message" class="input-field"></textarea>
-          <button class="submit-button" @click="showAlert">Send</button>
+          <textarea v-model="senderData.message" placeholder="Message" class="input-field"></textarea>
+          <button class="submit-button" @click="handleSubmit">Send</button>
           <div class="arrow-animation"></div>
         </div>
       </div>
@@ -110,15 +110,76 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+import axios from "axios"
 import HeaderView from '@/components/Header.vue';
 export default {
   components:{
     HeaderView
   },
   setup() {
-    return {};
+    const name = ref()
+    const company_name = ref()
+    const email_address = ref()
+    const mobile_number = ref()
+    const product = ref()
+    const message = ref()
+    const subject = ref()
+    const body = ref()
+    const mailToLink = ref()
+
+    const recipient = ref("dong.asumbra@gmail.com")
+
+    const senderData = ref({
+         name: "",
+         email: "",
+         message: "",
+      })
+    const emailJSdata = ref({
+         service_id: "service_1sv31y8",
+         template_id: "template_2ehk52i",
+         user_id: "nEujiqDAmeP1p9eE2",
+         template_params: {
+            username: "",
+            from_name: "",
+            message: "",
+            address: "",
+            email: "",
+         },
+      })
+    return {
+      name,
+      company_name,
+      email_address,
+      mobile_number,
+      product,
+      message,
+      subject,
+      body,
+      mailToLink,
+      recipient,
+      senderData,
+      emailJSdata
+    };
   },
   methods: {
+    async handleSubmit() {
+         this.emailJSdata.template_params["from_name"] = this.senderData.name
+         this.emailJSdata.template_params["message"] = this.senderData.message
+         this.emailJSdata.template_params["email"] = this.senderData.email
+         await axios
+            .post(
+               "https://api.emailjs.com/api/v1.0/email/send",
+               this.emailJSdata
+            )
+            .then((res) => {
+              console.log(res)
+            })
+            .catch((err) => {
+              console.log(err)
+            })
+      },
+
     showAlert() {
       alert("Sorry we are under maintenance, for further inquiries you can message us on our Facebook: page Tuklas IT Creatives and Solution or you may call us at +639638385017");
     }
