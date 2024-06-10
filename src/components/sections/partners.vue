@@ -38,28 +38,27 @@ export default {
     display: grid;
     place-items: center;
     overflow: hidden;
+}
+.slider::before,
+.slider::after{
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+}
 
-    &::before,
-    &::after {
-        position: absolute;
-        background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-        content: '';
-        height: 100%;
-        width: 25%;
-        z-index: 2;
-        pointer-events: none;
-    }
+.slide::before{
+    left: 0;
+    top: 0;
+}
 
-    &::before {
-        left: 0;
-        top: 0;
-    }
-
-    &::after {
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-    }
+.slide:after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
 
 .slide-track2 {
