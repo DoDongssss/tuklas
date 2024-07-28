@@ -128,7 +128,7 @@ export default {
     const body = ref()
     const mailToLink = ref()
 
-    const recipient = ref("dong.asumbra@gmail.com")
+    const recipient = ref("fritz123.tuazon08@gmail.com")
 
     const senderData = ref({
          name: "",
@@ -180,9 +180,9 @@ export default {
             })
       },
 
-    showAlert() {
-      alert("Sorry we are under maintenance, for further inquiries you can message us on our Facebook: page Tuklas IT Creatives and Solution or you may call us at +639638385017");
-    }
+    // showAlert() {
+    //   alert("Sorry we are under maintenance, for further inquiries you can message us on our Facebook: page Tuklas IT Creatives and Solution or you may call us at +639638385017");
+    // }
   }
 };
 </script>
