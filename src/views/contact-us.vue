@@ -8,6 +8,7 @@
         <img src="/images/Contact.jpg" alt="TUKLAS" class="left-image" />
       </div>
     
+      
       <div class="right-side">
         <div class="chat-box">
           <h1 class="chat-heading text-4xl md:text-6xl mb-5">Let's Chat</h1>
